@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Lec4_RockPaperGame {
     public static void main(String[] args) {
-        boolean choice = true;
-        while (choice) {
+
+        while (true) {
             System.out.println("Welcome! to JAVA game.");
             Random rn = new Random();
             System.out.println("Rock, Paper and Scissor game : \n Select between (0-1-2-3) 3-Exit: ");
@@ -43,7 +43,11 @@ public class Lec4_RockPaperGame {
             }
             System.out.println("Do you want to play again!(0/1) ");
             int  c = sc.nextInt();
-            choice = (c != 0);
+//            choice = (c != 0);
+            //we can also use break
+            if (c == 0) {
+                break;
+            }
         }
         System.out.println("Thanks");
 
