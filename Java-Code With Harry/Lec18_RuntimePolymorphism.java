@@ -3,9 +3,13 @@ class A1{
     public void function(){
         System.out.println("Function A called...");
     }
+    public void me(){
+        System.out.println("Ahmad");
+    }
 }
 
 class B1 extends A1{
+    @Override
     public void function(){
         System.out.println("Function B called...");
     }
@@ -20,6 +24,7 @@ public class Lec18_RuntimePolymorphism {
         // int a, A1 class is working like datatype, this is class type variable obj
         obj = new B1();
         obj.function();
+        obj.me();
     }
 
 }
