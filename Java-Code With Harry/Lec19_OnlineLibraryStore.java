@@ -42,6 +42,10 @@ class Library{
             return;
         }
 
+        for(String b : issuedBooks){
+            System.out.println("Book: " + b);
+        }
+
         for (int i = 0; i < size2; i++) {
             System.out.println("Book "+(i+1) + issuedBooks[i]);
         }
