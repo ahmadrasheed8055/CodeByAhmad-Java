@@ -32,6 +32,9 @@ class Person1 {
 }
 
 // Subclass representing a woman, inherits from Person1 class
+// Note: In java we cannot apply the rule of multiple inheritance -
+// SubClass only extend one Super  Class
+
 class Women extends Person1 {
     // Additional attributes specific to women
     String isPregnant;
