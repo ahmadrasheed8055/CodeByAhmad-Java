@@ -1,0 +1,13 @@
+When you write Java code in a .java file, you use a text editor or an IDE to create human-readable source code.
+
+You then compile this source code using the Java compiler (javac). The compiler translates your Java source code into bytecode instructions, which are stored in .class files. These .class files contain the bytecode representation of your program.
+
+Now, these .class files are platform-independent, meaning they can be executed on any machine that has a compatible Java Virtual Machine (JVM) installed. The JVM is responsible for executing the bytecode instructions.
+
+When you run your Java program (by using the java command followed by the name of your main class), the JVM loads the bytecode from the .class files and interprets/compiles it into native machine code that can be executed by the underlying hardware.
+
+So, to execute a Java program:
+
+You compile the source code into bytecode using javac.
+Then, you execute the bytecode using java, and the JVM on the target machine interprets/compiles it into native machine code.
+This process ensures that Java programs are indeed portable and can run on any machine with a compatible JVM, regardless of the underlying hardware or operating system.
