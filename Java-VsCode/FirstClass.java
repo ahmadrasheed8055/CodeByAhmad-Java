@@ -4,6 +4,6 @@ package first;
 public class FirstClass {
     public static void main(String[] args) {
        
-       System.out.println("Second file of java");
+       System.out.println("First file of java");
     }
 }
