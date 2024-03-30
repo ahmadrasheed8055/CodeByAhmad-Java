@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Lec29_TryCatch {
+public class Lec27_TryCatch {
 
     public static void print(int n){
         System.out.println(n);
