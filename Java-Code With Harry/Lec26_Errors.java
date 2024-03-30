@@ -17,6 +17,29 @@ public class Lec26_Errors {
         // Example: A programmer is fetching data from an API, but encounters
         // an error during the fetching process.
 
+//        for (int i = 1; i < 10; i++) {
+//            if (i % 2  != 0) {
+//                System.out.print(i + " ");
+//            }
+//        }
+        System.out.println("Printing Prime number: ");
+        int n = 2;
+        while (n < 20) {
+        boolean inPrime = true;
+            for (int i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    inPrime = false;
+                    break;
+                }
+            }
+
+            if (inPrime == true) {
+                System.out.print(n + " ");
+            }
+            n++;
+        }
+
+
 
     }
 }
