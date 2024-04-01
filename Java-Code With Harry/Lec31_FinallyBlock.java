@@ -1,3 +1,7 @@
+
+import java.util.Scanner;
+import java.util.concurrent.ExecutionException;
+
 class ExA extends ArithmeticException {
     @Override
     public String toString() {
@@ -7,6 +11,13 @@ class ExA extends ArithmeticException {
     @Override
     public String getMessage() {
         return "Less then 10";
+    }
+}
+
+class IndexEx extends ArrayIndexOutOfBoundsException{
+    @Override
+    public String toString() {
+        return "Invalid index - 0 to 3";
     }
 }
 
@@ -68,6 +79,30 @@ public class Lec31_FinallyBlock {
 
         }
 
+        System.out.println("Problem 4");
+        int i = 0;
+        String []names = new String[4];
+        names[0] = "Ahmad";
+        names[1] = "Rasheed";
+        names[2] = "Ayoub";
+        names[3] = "Ismat";
+        Scanner sc = new Scanner(System.in);
+
+        while (i < 5) {
+            try {
+                System.out.println("Try " + (i + 1));
+                System.out.println("Enter index : ");
+                int n = sc.nextInt();
+                if (n > 3) { // Check if index is within array bounds
+                    throw new IndexEx(); // Throw custom exception if index is invalid
+                }
+                System.out.println("Name at this index : " + names[n]);
+                break; // Exit the loop if successful
+            } catch (IndexEx e) {
+                System.out.println(e.toString()); // Print the exception message
+                i++; // Increment the tries
+            }
+        }
 
 
     }
